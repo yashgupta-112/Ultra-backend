@@ -167,7 +167,7 @@ def place_order(request):
     if serializer.is_valid():
         serializer.save()
     return Response(serializer.data)
-    return Response({ "User created"})
+    
     
 @api_view(['GET'])
 def get_order(request,pk):
